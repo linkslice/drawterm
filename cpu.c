@@ -274,7 +274,8 @@ cpumain(int argc, char **argv)
 {
 	char *s, *a;
 
-	user = getenv("USER");
+	/* always prompt for user */
+	/* user = getenv("USER"); */
 	host = getenv("cpu");
 	authserver = getenv("auth");
 
